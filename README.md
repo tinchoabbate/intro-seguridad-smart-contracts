@@ -10,7 +10,7 @@ Repositorio del curso "Introducción a Hacking y Seguridad en Smart Contracts", 
 - [Instalar](#Instalar)
 - [Uso](#Uso)
 - [Ejercicios](#Ejercicios)
-- [Licencia](#Licencia)
+- [Recursos adicionales](#Recursos-adicionales)
 - [Disclaimer](#Disclaimer)
 
 ## Requisitos preliminares
@@ -25,6 +25,16 @@ Primero que nada, debés tener instalado [NodeJS](https://nodejs.org/en/). Luego
 
 1. Descargá este repositorio.
 2. En el directorio raíz, ejecutá el comando `npm install` o `yarn` para instalar las dependencias.
+
+## Uso
+
+Una vez instaladas las dependencias, podés ejecutar cada archivo de test (en la carpeta `test`) con el comando
+
+> $ yarn hardhat test test/<path>/<al>/<archivo>.js
+
+o 
+
+> $ npx hardhat test test/<path>/<al>/<archivo>.js
 
 ## Ejercicios
 
@@ -54,14 +64,6 @@ Además, en el proceso, vas a aprender sobre:
 ## Recursos adicionales
 
 Para más información, links y material educacional visitá [mi sitio web](https://www.notonlyowner.com/learn/intro-seguridad-hacking-ethereum).
-
-## Mantenimiento
-
-[@tinchoabbate](https://github.com/tinchoabbate)
-
-## Licencia
-
-MIT
 
 ## Disclaimer
 
