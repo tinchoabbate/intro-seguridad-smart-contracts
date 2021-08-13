@@ -30,11 +30,11 @@ Primero que nada, debés tener instalado [NodeJS](https://nodejs.org/en/). Luego
 
 Una vez instaladas las dependencias, podés ejecutar cada archivo de test (en la carpeta `test`) con el comando
 
-> $ yarn hardhat test test/<path>/<al>/<archivo>.js
+> $ yarn hardhat test test/path/al/archivo.js
 
 o 
 
-> $ npx hardhat test test/<path>/<al>/<archivo>.js
+> $ npx hardhat test test/path/al/archivo.js
 
 ## Ejercicios
 
