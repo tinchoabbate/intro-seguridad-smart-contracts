@@ -57,7 +57,7 @@ Para más información, links y material educacional visitá [mi sitio web](http
 
 ## Mantenimiento
 
-[@tinchoabbate](github.com/tinchoabbate)
+[@tinchoabbate](https://github.com/tinchoabbate)
 
 ## Licencia
 
