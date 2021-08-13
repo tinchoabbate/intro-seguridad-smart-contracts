@@ -51,6 +51,10 @@ Además, en el proceso, vas a aprender sobre:
 - Llamadas entre contratos, tanto a funciones como para enviar ETH.
 - Primitivas de DeFi, como los flash loans.
 
+## Recursos adicionales
+
+Para más información, links y material educacional visitá [mi sitio web](https://www.notonlyowner.com/learn/intro-seguridad-hacking-ethereum).
+
 ## Mantenimiento
 
 [@tinchoabbate](github.com/tinchoabbate)
