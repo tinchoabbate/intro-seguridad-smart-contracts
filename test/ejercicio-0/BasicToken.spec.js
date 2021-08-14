@@ -20,10 +20,6 @@ describe("Ejercicio 0", function () {
 
     describe("Inicialización", function () {
 
-        it('La cantidad de decimales es la esperada', async function () {
-            expect(await this.token.decimals()).to.eq(18);    
-        });
-
         it.skip('La cuenta minter es el deployer', async function () {
             // COMPLETAR
         });

@@ -25,15 +25,10 @@ contract BasicToken is Mintable {
     // Registro interno de balances por cuenta
     mapping(address => uint256) private _balances;
 
-    event Transfer(address indexed from, address indexed to, uint256 amount);
-
     constructor(
         uint256 _initialSupply
     ) {
         totalSupply = _initialSupply;
-
-        // La cuenta que deploye el contrato va a tener poder para generar nuevos tokens
-        minter = msg.sender;
         
         // El supply inicial se asigna a la cuenta que deploye el contrato
         _balances[msg.sender] = _initialSupply;
@@ -49,14 +44,12 @@ contract BasicToken is Mintable {
         _balances[msg.sender] -= amount;
         _balances[to] += amount;
 
-        emit Transfer(msg.sender, to, amount);
         return true;
     }
 
     // Función para crear tokens. Sólo llamable por una cuenta con privilegios.
     function mint(address to, uint256 amount) external onlyMinter returns (bool) {
         _balances[to] += amount;
-        emit Transfer(address(0), to, amount);
         return true;
     }
 }
