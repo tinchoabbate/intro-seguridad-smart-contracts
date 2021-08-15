@@ -16,7 +16,7 @@ contract Mintable {
 
 /// @title BasicToken
 /// @notice Implementación básica y muy simplificada de un token minteable.
-/// @dev ¡Cuidado! Este no es un token full ERC20. Por ejemplo, no implementa funciones de approval / transferFrom.
+/// @dev ¡Cuidado! Este no es un token full ERC20.
 contract BasicToken is Mintable {
 
     // Para las variables de estado públicas, Solidity crea automáticamente getters
