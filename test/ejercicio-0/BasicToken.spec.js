@@ -2,30 +2,26 @@ const { ethers } = require("hardhat");
 const { expect } = require("chai");
 
 describe("Ejercicio 0", function () {
-    // Cantidad inicial de 1 millón de tokens
-    const INITIAL_TOKEN_AMOUNT = ethers.utils.parseUnits('1000000', 'ether');
+    // Cantidad inicial de 1 millón de tokens (1000000 * 10^18)
+    const INITIAL_SUPPLY = ethers.utils.parseUnits('1000000', 'ether');
     
     let deployer, usuario, otroUsuario;
 
     beforeEach(async function () {
-
         [deployer, usuario, otroUsuario] = await ethers.getSigners();
 
         const BasicToken = await ethers.getContractFactory("BasicToken", deployer);
 
-        this.token = await BasicToken.deploy(
-            INITIAL_TOKEN_AMOUNT
-        );
+        this.token = await BasicToken.deploy(INITIAL_SUPPLY);
     });
 
     describe("Inicialización", function () {
-
         it.skip('La cuenta minter es el deployer', async function () {
             // COMPLETAR
         });
 
         it('El total supply del token es el esperado', async function () {
-            expect(await this.token.totalSupply()).to.eq(INITIAL_TOKEN_AMOUNT);
+            expect(await this.token.totalSupply()).to.eq(INITIAL_SUPPLY);
         });
 
         it.skip('Todo el total supply es asignado al deployer', async function () {
@@ -49,7 +45,6 @@ describe("Ejercicio 0", function () {
     });
 
     describe("Minting", function() {
-
         it.skip('Un usuario sin permisos no puede mintear tokens', async function () {
             // COMPLETAR
         });
@@ -57,6 +52,5 @@ describe("Ejercicio 0", function () {
         it.skip('Un usuario con permisos puede mintear tokens', async function () {
             // COMPLETAR
         });
-        
     });
 });
