@@ -3,9 +3,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract VaultV3 is Ownable, ReentrancyGuard {
+contract VaultV3 is Ownable {
 
   using Address for address payable;
 
@@ -21,7 +20,7 @@ contract VaultV3 is Ownable, ReentrancyGuard {
   /**
     @notice Retirar ETH depositado
    */
-  function withdraw() external nonReentrant {
+  function withdraw() external {
     uint256 amountDeposited = deposits[msg.sender];
 
     // La función `sendValue` está disponible porque estamos usando la libreria Address de OpenZeppelin Contracts
